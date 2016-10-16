@@ -15,10 +15,14 @@ PROVISION:
 WEB:
   vhost:
     - { serverName: "docker.vm", serverAlias: "*.vm" }
+    - { serverName: "lwww.tannico.it", serverAlias: "" }
+    - { serverName: "lwww.shoppable.it", serverAlias: "" }
 
 DNS:
   domain:
     - { domain: ".vm", address: "127.0.0.1" }
+    - { domain: "lwww.tannico.it", address: "127.0.0.1" }
+    - { domain: "lwww.shoppable.it", address: "127.0.0.1" }
 
 MAIL:
   aliases:
